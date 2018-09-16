@@ -1,5 +1,6 @@
 li a {
     color: green;
+    text-align: center;
 }
 body {
     background: white url("images/background.jpg") no-repeat;
