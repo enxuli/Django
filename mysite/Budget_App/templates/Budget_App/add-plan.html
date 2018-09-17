@@ -6,14 +6,16 @@
   <form action="" method="POST">
     {% csrf_token %}
     {{ form }}
-    <label for="categoryInput"> Expense Categories (hit enter after every Category) </label>
+    <label for="categoryInput">Expense Categories (hit enter after every Category)</label>
     <input type="text" name="categoryInput" id="categoryInput">
     <input type="hidden" name="categoriesString">
 
 
     <ul id= "categoriesContainer">
     </ul>
-    <button type="submit" class="btn" >Add New Plan</button>
+
+    <button type="submit" class="btn">Add New Plan</button>
+
   </form>
 </div>
 
