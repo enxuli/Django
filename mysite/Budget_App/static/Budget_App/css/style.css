@@ -23,7 +23,18 @@ i{
   padding: 5px 5px;
   margin: 0px!important;
 }
-/* Project list*/
+
+
+/* plan add view*/
+form ul li.category{
+  display: inline-block;
+  background-color: white;
+  padding: 5px 10px;
+  margin-right: 5px;
+}
+
+
+/* plan list*/
 .noproject-wrapper{
   margin-top: 250px;
   padding: 80px 0px;
@@ -50,7 +61,7 @@ i{
   }
 }
 
-/* projcet detail expenses*/
+/* plan detail expenses*/
 
 .section-expenses button{
   padding:0px 8px;

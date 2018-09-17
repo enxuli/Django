@@ -7,6 +7,7 @@ from . import views
 app_name = 'Budget_App'
 
 urlpatterns = [
-    path('', views.project_list, name='list'),
-    path('<slug:project_slug>', views.project_detail, name='detail'),
+    path('', views.plan_list, name='list'),
+    path('add-plan', views.PlanCreateView.as_view(),name = 'add'),
+    path('<slug:plan_slug>', views.plan_detail, name='detail'),
 ]

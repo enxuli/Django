@@ -1,0 +1,31 @@
+{% extends 'Budget_App/base.html' %}
+{% load static %}
+{% block content %}
+
+<div class="container">
+  <form action="" method="POST">
+    {% csrf_token %}
+    {{ form }}
+    <label for="categoryInput"> Expense Categories (hit enter after every Category) </label>
+    <input type="text" name="categoryInput" id="categoryInput">
+    <input type="hidden" name="categoriesString">
+    <ul id= "categoriesContainer">
+      <li class = "category">
+        <span class = "name">development</span>
+        <span onclick = "removeCategery(this)" class="btnRemove bold">X</span>
+      </li>
+      <li class = "category">
+        <span class = "name">development</span>
+        <span onclick = "removeCategery(this)" class="btnRemove bold">X</span>
+      </li>
+      <li class = "category">
+        <span class = "name">development</span>
+        <span onclick = "removeCategery(this)" class="btnRemove bold">X</span>
+      </li>
+    </ul>
+    <button type="submit" class="btn" >Add New Plan</button>
+  </form>
+</div>
+
+
+{% endblock %}
