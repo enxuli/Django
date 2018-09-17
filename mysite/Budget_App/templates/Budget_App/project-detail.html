@@ -1,1 +1,138 @@
-<h1>Project Detail View</h1>
+{% extends 'Budget_App/base.html' %}
+{% block content %}
+
+<div class = "container">
+
+  <section class = "section section-stats">
+    <div class = "row">
+
+      <div class="col s12 m12 l4">
+        <div class="card-panel">
+          <h6>Total Budget</h6>
+          <h1 class="bold">$3000.00</h1>
+        </div>
+      </div>
+      <div class="col s12 m6 l4">
+        <div class="card-panel">
+          <h6>Budget Left</h6>
+          <h1 class="bold">$1000.00</h1>
+        </div>
+      </div>
+      <div class="col s12 m6 l4">
+        <div class="card-panel">
+          <h6>Total Transactions</h6>
+          <h1 class="bold">$3000.00</h1>
+        </div>
+      </div>
+
+
+    </div>
+
+  </section>
+
+  <section class= "section section-expenses">
+    <div class="row">
+      <button type="button" class = "btn waves-effect right " name="button">
+        <i class= "material-icons white-text center bold">add</i>
+      </button>
+    </div>
+    <ul class = "z-depth-1">
+      <li>
+        <div class="card-penel z-depth-0 expense">
+          <div class="row">
+            <div class="col s12 m4 l6">
+              <span class = "title">Page Design</span>
+            </div>
+            <div class="col s12 m4 l3">
+              <span class = "title">$249.00</span>
+            </div>
+            <div class="col s12 m2 l2">
+              <span class = "title category bold">Development</span>
+            </div>
+            <a href="">
+              <i class = "material-icons red-text right bold">close</i>
+            </a>
+          </div>
+        </div>
+      </li>
+      <li>
+        <div class="card-penel z-depth-0 expense">
+          <div class="row">
+            <div class="col s12 m4 l6">
+              <span class = "title">Page Design</span>
+            </div>
+            <div class="col s12 m4 l3">
+              <span class = "title">$249.00</span>
+            </div>
+            <div class="col s12 m2 l2">
+              <span class = "title category bold">Development</span>
+            </div>
+            <a href="">
+              <i class = "material-icons red-text right bold">close</i>
+            </a>
+          </div>
+        </div>
+      </li>
+      <li>
+        <div class="card-penel z-depth-0 expense">
+          <div class="row">
+            <div class="col s12 m4 l6">
+              <span class = "title">Page Design</span>
+            </div>
+            <div class="col s12 m4 l3">
+              <span class = "title">$249.00</span>
+            </div>
+            <div class="col s12 m2 l2">
+              <span class = "title category bold">Development</span>
+            </div>
+            <a href="">
+              <i class = "material-icons red-text right bold">close</i>
+            </a>
+          </div>
+        </div>
+      </li>
+      <li>
+        <div class="card-penel z-depth-0 expense">
+          <div class="row">
+            <div class="col s12 m4 l6">
+              <span class = "title">Page Design</span>
+            </div>
+            <div class="col s12 m4 l3">
+              <span class = "title">$249.00</span>
+            </div>
+            <div class="col s12 m2 l2">
+              <span class = "title category bold">Development</span>
+            </div>
+            <a href="">
+              <i class = "material-icons red-text right bold">close</i>
+            </a>
+          </div>
+        </div>
+      </li>
+      <li>
+        <div class="card-penel z-depth-0 expense">
+          <div class="row">
+            <div class="col s12 m4 l6">
+              <span class = "title">Page Design</span>
+            </div>
+            <div class="col s12 m4 l3">
+              <span class = "title">$249.00</span>
+            </div>
+            <div class="col s12 m2 l2">
+              <span class = "title category bold">Development</span>
+            </div>
+            <a href="">
+              <i class = "material-icons red-text right bold">close</i>
+            </a>
+          </div>
+        </div>
+      </li>
+      
+    </ul>
+  </section>
+
+
+
+</div>
+
+{% endblock %}
